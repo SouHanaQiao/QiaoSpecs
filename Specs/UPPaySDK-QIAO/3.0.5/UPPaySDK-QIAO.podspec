@@ -33,6 +33,8 @@ Pod::Spec.new do |s|
   }
   s.vendored_libraries = 'Pod/Classes/UPPayPlugin/libUPPayPluginPro.a'
   s.frameworks = 'AVFoundation', 'MediaPlayer', 'AudioToolbox'
+  s.ios.library = 'z'
+  #s.libraries = 'libz'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
