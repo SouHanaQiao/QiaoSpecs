@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
     'AliPaySDK-QIAO' => ['Pod/Assets/*.png']
   }
    s.resources = "Pod/Assets/AlipaySDK.bundle"
-s.vendored_frameworks = 'Pod/Assets/AlipaySDK.framework', 'Pod/Assets/openssl.framework'
-s.public_header_files = "Pod/Assets/AlipaySDK.framework/Headers/**/*.h", "Pod/Assets/openssl.framework/headers/**/*.h"
+  s.vendored_frameworks = 'Pod/Assets/AlipaySDK.framework', 'Pod/Assets/openssl.framework'
+  s.public_header_files = "Pod/Assets/AlipaySDK.framework/Headers/**/*.h", "Pod/Assets/openssl.framework/headers/**/*.h", "Pod/Classes/**/*.h"
  s.frameworks = "SystemConfiguration"  
 
 end
