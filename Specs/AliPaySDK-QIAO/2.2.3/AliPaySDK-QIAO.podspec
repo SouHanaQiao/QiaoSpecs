@@ -25,4 +25,5 @@ Pod::Spec.new do |s|
   s.public_header_files = "Pod/Assets/AlipaySDK.framework/Headers/**/*.h", "Pod/Assets/openssl.framework/headers/**/*.h", "Pod/Classes/**/*.h"
  s.frameworks = "SystemConfiguration"  
 
+
 end
