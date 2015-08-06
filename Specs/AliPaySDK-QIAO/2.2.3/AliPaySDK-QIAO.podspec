@@ -16,14 +16,20 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'AliPaySDK-QIAO' => ['Pod/Assets/*.png']
-  }
-   s.resources = "Pod/Assets/AlipaySDK.bundle"
-  s.vendored_frameworks = 'Pod/Assets/AlipaySDK.framework', 'Pod/Assets/openssl.framework'
-  s.public_header_files = "Pod/Assets/AlipaySDK.framework/Headers/**/*.h", "Pod/Assets/openssl.framework/headers/**/*.h", "Pod/Classes/**/*.h"
- s.frameworks = "SystemConfiguration"  
+  #s.source_files = 'Pod/Classes/**/*'
+  #s.resource_bundles = {
+   # 'AliPaySDK-QIAO' => ['Pod/Assets/*.png']
+  #}
+   #s.resources = "Pod/Assets/AlipaySDK.bundle"
+  #s.vendored_frameworks = 'Pod/Assets/AlipaySDK.framework'
+  #s.public_header_files = "Pod/Assets/AlipaySDK.framework/Headers/**/*.h", "Pod/Assets/openssl.framework/headers/**/*.h", "Pod/Classes/**/*.h"
 
+  s.subspec 'NetWorkEngine' do |networkEngine|
+      networkEngine.source_files = 'Pod/Classes/**/*'
+      #networkEngine.public_header_files = "Pod/Classes/**/*.h"
+      #networkEngine.vendored_frameworks = 'Pod/Assets/openssl.framework'
+  end
+
+ s.frameworks = "SystemConfiguration"  
 
 end
